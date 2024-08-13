@@ -4,8 +4,8 @@
     "main": "index.js",
     "type": "module",
     "scripts": {
-        "test": "npm run transpile && jest",
-        "transpile": "babel src --out-dir dist && babel tests --out-dir tests-dist"
+        "test": "npm run build && jest",
+        "build": "babel src tests --out-dir dist"
     },
     "author": "Hugo Burton",
     "license": "ISC",
